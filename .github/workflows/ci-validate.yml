@@ -1,0 +1,31 @@
+name: CI Validate
+on:
+  pull_request:
+  push:
+    branches: ["main", "2-ecs-core"]
+jobs:
+  validate-json:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Install ajv
+        run: npm install -g ajv-cli@5
+      - name: Validate JSON Schemas
+        run: |
+          ajv validate -s schema/item.schema.json -d Mods/items.alpha.json --spec=draft2020
+          ajv validate -s schema/event.schema.json -d Mods/events.beta.json --spec=draft2020
+          ajv validate -s schema/doctrine.schema.json -d Mods/doctrines.alpha.json --spec=draft2020
+          ajv validate -s schema/monster.schema.json -d Mods/monsters.alpha.json --spec=draft2020
+          ajv validate -s schema/building.schema.json -d Mods/buildings.alpha.json --spec=draft2020
+          ajv validate -s schema/recipe.schema.json -d Mods/recipes.alpha.json --spec=draft2020
+  build-scripts:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Display tree
+        run: |
+          tree -L 4 | head -n 200

@@ -1,0 +1,5 @@
+Metric,BasePerSecond
+HungerDecay,0.5
+WarmthDecay,0.2
+MoraleDecay,0.05
+FatigueGain,0.3
