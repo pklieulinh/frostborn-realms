@@ -15,5 +15,13 @@ namespace FrostbornRealms.Core {
 
         [Header("Doctrine")]
         public float StoicismMoraleDecayMultiplier = 0.85f;
+
+        [Header("Heat")]
+        public float AmbientTemperature = -20f;
+        public float CitizenComfortTemp = 5f;
+        public float WarmthBonusPerTempDegree = 0.02f;
+
+        [Header("Crafting")]
+        public int MaxParallelCrafts = 4;
     }
 }
