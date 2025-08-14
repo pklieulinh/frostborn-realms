@@ -1,0 +1,30 @@
+# Unity / DOTS
+[Ll]ibrary/
+[Tt]emp/
+[Bb]uild/
+[Bb]uilds/
+[Pp]ackages/
+[Mm]emoryCaptures/
+[Bb]in/
+[Oo]bj/
+UserSettings/
+Logs/
+*.log
+
+# IDE
+.vscode/
+.idea/
+*.sln
+*.csproj
+*.user
+*.unityproj
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Generated
+Assets/AddressableAssetsData/
+Assets/StreamingAssets/Generated/
+CoverageReports/
+_.DS_Store
