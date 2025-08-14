@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Recipe",
+  "type": "object",
+  "required": ["recipes"],
+  "properties": {
+    "recipes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "key", "inputs", "outputs"],
+        "properties": {
+          "id": { "type": "integer" },
+          "key": { "type": "string" },
+          "inputs": { "type": "array", "items": { "type": "object", "required": ["item", "count"], "properties": { "item": { "type": "string" }, "count": { "type": "integer" } } } },
+          "outputs": { "type": "array", "items": { "type": "object", "required": ["item", "count"], "properties": { "item": { "type": "string" }, "count": { "type": "integer" } } } },
+          "time": { "type": "number" }
+        }
+      }
+    }
+  }
+}

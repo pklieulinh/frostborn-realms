@@ -1,0 +1,5 @@
+Key,ThreatTier,BaseHealth,Damage
+ice_wolf,1,60,8
+frost_wraith,2,90,12
+frost_ogre,3,180,24
+blizzard_elemental,4,250,30

@@ -1,0 +1,3 @@
+Key,Category,PrimaryEffect
+stoicism,morale,morale_decay-15%
+efficiency,production,fuel_use-5%
