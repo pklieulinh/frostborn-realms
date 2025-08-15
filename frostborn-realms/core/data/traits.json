@@ -1,0 +1,10 @@
+[
+  { "id": "Stoic", "effects": { "emotion_stability": 0.2 }, "desc": "Ổn định cảm xúc, ít dao động." },
+  { "id": "Hotheaded", "effects": { "anger_gain": 0.3, "morale_decay": 0.1 }, "desc": "Dễ nổi nóng, suy giảm sĩ khí nhanh." },
+  { "id": "Efficient", "effects": { "gather_speed": 0.15, "build_speed": 0.1 }, "desc": "Làm việc nhanh và gọn." },
+  { "id": "Fragile", "effects": { "hp_max_mult": -0.1 }, "desc": "Thể chất yếu, ít HP." },
+  { "id": "LeaderAura", "effects": { "aura_morale": 0.05 }, "desc": "Tỏa tinh thần lãnh đạo." },
+  { "id": "Scholar", "effects": { "research_points": 0.05 }, "desc": "Sinh điểm nghiên cứu thụ động." },
+  { "id": "ScoutAdept", "effects": { "expedition_risk_mult": -0.05 }, "desc": "Giảm rủi ro thám hiểm." },
+  { "id": "Engineer", "effects": { "build_speed": 0.15 }, "desc": "Đẩy nhanh xây dựng." }
+]

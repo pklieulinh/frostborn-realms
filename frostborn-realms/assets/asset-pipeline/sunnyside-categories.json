@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "rules": [
+    { "category": "characters/goblin", "patterns": ["goblin"] },
+    { "category": "characters", "patterns": ["character", "characters", "hero", "npc"] },
+    { "category": "crops", "patterns": ["crop", "crops", "plant", "seed", "wheat", "carrot", "turnip", "potato"] },
+    { "category": "fx", "patterns": ["chimney", "smoke", "particle", "fx", "vfx"] },
+    { "category": "tilesets", "patterns": ["tile", "tileset", "ground", "floor", "path", "cliff", "water", "terrain"] },
+    { "category": "props", "patterns": ["prop", "furniture", "object", "deco", "decoration", "bench", "table", "chair"] },
+    { "category": "items", "patterns": ["item", "icon", "potion", "tool", "weapon"] },
+    { "category": "ui", "patterns": ["ui", "hud", "frame", "panel", "cursor"] }
+  ],
+  "defaultCategory": "misc",
+  "naming": {
+    "prefix": "ssw"
+  }
+}

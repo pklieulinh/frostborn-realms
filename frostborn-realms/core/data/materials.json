@@ -1,0 +1,7 @@
+[
+  {"id":"Wood","tags":["Organic"],"hp_mult":0.6,"work_mult":0.8},
+  {"id":"Stone","tags":["Mineral"],"hp_mult":1.4,"work_mult":1.15},
+  {"id":"Iron","tags":["Metal"],"hp_mult":1.0,"work_mult":1.0},
+  {"id":"Steel","tags":["Metal"],"hp_mult":1.15,"work_mult":1.1},
+  {"id":"FrostCrystal","tags":["Arcane"],"hp_mult":1.1,"work_mult":1.05}
+]

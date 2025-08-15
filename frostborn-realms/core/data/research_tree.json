@@ -1,0 +1,7 @@
+[
+  { "id": "gather1", "name": "Sharper Axes", "cost": 8, "effects": { "gather_speed": 0.15 } },
+  { "id": "build1", "name": "Reinforced Tools", "cost": 10, "effects": { "build_speed": 0.15 }, "prereq": "gather1" },
+  { "id": "exp1", "name": "Survival Drills", "cost": 12, "effects": { "expedition_risk_mult": -0.1 }, "prereq": "gather1" },
+  { "id": "loot1", "name": "Efficient Packing", "cost": 14, "effects": { "expedition_loot_mult": 0.2 }, "prereq": "exp1" },
+  { "id": "portal1", "name": "Arcane Tuning", "cost": 16, "effects": { "portal_quality_bonus": 0.1 }, "prereq": "build1" }
+]

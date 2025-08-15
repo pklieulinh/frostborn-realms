@@ -1,0 +1,72 @@
+// 60 resource definitions (expanded)
+export interface ResourceDef {
+  id: string;
+  title: string;
+  rarity: 'common' | 'uncommon' | 'rare' | 'epic';
+  stack: number;
+  baseValue: number;
+  tags: string[];
+  description: string;
+}
+export const RESOURCE_DEFS_V2: ResourceDef[] = [
+  { id: 'wood_frost', title: 'Gỗ Lạnh', rarity: 'common', stack: 300, baseValue: 1, tags: ['material','fuel'], description: 'Gỗ cơ bản bị đóng băng.' },
+  { id: 'wood_resin', title: 'Gỗ Nhựa Hàn', rarity: 'common', stack: 250, baseValue: 2, tags: ['material'], description: 'Gỗ chứa nhựa chống giòn.' },
+  { id: 'wood_glow', title: 'Gỗ Phát Quang', rarity: 'uncommon', stack: 200, baseValue: 4, tags: ['material','luminescent'], description: 'Phát ánh sáng dịu, tăng morale.' },
+  { id: 'ore_ice', title: 'Quặng Băng', rarity: 'common', stack: 220, baseValue: 2, tags: ['material'], description: 'Khoáng băng thô.' },
+  { id: 'ore_iron_frost', title: 'Quặng Sắt Hàn', rarity: 'common', stack: 200, baseValue: 3, tags: ['material','metal'], description: 'Sắt nhiễm băng.' },
+  { id: 'ore_cobalt_chill', title: 'Quặng Cobalt Lạnh', rarity: 'uncommon', stack: 180, baseValue: 5, tags: ['material','metal'], description: 'Cobalt ổn định nhiệt.' },
+  { id: 'ore_mythril_frost', title: 'Mythril Băng', rarity: 'rare', stack: 120, baseValue: 14, tags: ['material','alloy'], description: 'Kim loại huyền thoại lạnh.' },
+  { id: 'ore_obsidian_cry', title: 'Đá Obsidian Lạnh', rarity: 'uncommon', stack: 160, baseValue: 6, tags: ['material','stone'], description: 'Obsidian cường hóa tuyết.' },
+  { id: 'food_frozen', title: 'Thực Phẩm Đông', rarity: 'common', stack: 400, baseValue: 1, tags: ['food'], description: 'Thức ăn đông.' },
+  { id: 'food_dried_meat', title: 'Thịt Khô Lạnh', rarity: 'common', stack: 300, baseValue: 2, tags: ['food'], description: 'Thịt khô bền.' },
+  { id: 'food_crystal_berry', title: 'Quả Tinh Thể', rarity: 'uncommon', stack: 200, baseValue: 4, tags: ['food','mood'], description: 'Quả sáng trong tăng morale.' },
+  { id: 'food_fermented_sap', title: 'Dung Dịch Lên Men', rarity: 'uncommon', stack: 150, baseValue: 5, tags: ['food','buff'], description: 'Tăng nhẹ productivity.' },
+  { id: 'crystal_chill', title: 'Tinh Thể Hàn', rarity: 'uncommon', stack: 120, baseValue: 6, tags: ['research','rare'], description: 'Tinh thể năng lượng lạnh.' },
+  { id: 'crystal_echo', title: 'Tinh Thể Vọng', rarity: 'rare', stack: 80, baseValue: 15, tags: ['research','resonance'], description: 'Tạo cộng hưởng buff nghiên cứu.' },
+  { id: 'crystal_void', title: 'Tinh Thể Hư Không', rarity: 'rare', stack: 60, baseValue: 22, tags: ['portal','rare'], description: 'Tinh thể trích xuất từ khe nứt.' },
+  { id: 'crystal_psy', title: 'Tinh Thể Tâm Trí', rarity: 'epic', stack: 40, baseValue: 40, tags: ['sanity','legend'], description: 'Ổn định sanity mạnh.' },
+  { id: 'core_heat', title: 'Nhiệt Lượng', rarity: 'uncommon', stack: 200, baseValue: 5, tags: ['energy'], description: 'Nguồn nhiệt ổn định.' },
+  { id: 'core_heat_dense', title: 'Nhiệt Lõi Đặc', rarity: 'rare', stack: 120, baseValue: 16, tags: ['energy'], description: 'Phiên bản năng lượng cô đặc.' },
+  { id: 'essence_frost', title: 'Tinh Hoa Băng', rarity: 'rare', stack: 60, baseValue: 28, tags: ['essence','portal'], description: 'Tinh hoa cực lạnh.' },
+  { id: 'essence_ember', title: 'Tinh Hoa Tàn', rarity: 'rare', stack: 50, baseValue: 30, tags: ['essence','heat'], description: 'Tinh hoa nhiệt hiếm.' },
+  { id: 'essence_void', title: 'Tinh Hoa Hư Không', rarity: 'epic', stack: 30, baseValue: 55, tags: ['essence','legend','portal'], description: 'Tác động portal cao cấp.' },
+  { id: 'alloy_froststeel', title: 'Hợp Kim Băng Thép', rarity: 'uncommon', stack: 140, baseValue: 9, tags: ['alloy','material'], description: 'Hợp kim chịu lạnh.' },
+  { id: 'alloy_cobalt_mythril', title: 'Hợp Kim Cobalt-Mythril', rarity: 'rare', stack: 90, baseValue: 26, tags: ['alloy'], description: 'Hợp kim tinh luyện cao.' },
+  { id: 'alloy_void_plate', title: 'Tấm Hợp Kim Hư Không', rarity: 'epic', stack: 50, baseValue: 60, tags: ['alloy','legend'], description: 'Vật liệu xây dựng cổng cao cấp.' },
+  { id: 'reagent_mist', title: 'Dung Sương Hàn', rarity: 'uncommon', stack: 130, baseValue: 5, tags: ['reagent'], description: 'Dung dịch chế tạo căn bản.' },
+  { id: 'reagent_focus', title: 'Dung Dịch Tập Trung', rarity: 'uncommon', stack: 120, baseValue: 6, tags: ['reagent','mood'], description: 'Giảm fatigue nhẹ.' },
+  { id: 'reagent_psy', title: 'Dung Dịch Tâm Thức', rarity: 'rare', stack: 80, baseValue: 20, tags: ['reagent','sanity'], description: 'Tăng sanity trung bình.' },
+  { id: 'reagent_stabilizer', title: 'Chất Ổn Định Cổng', rarity: 'rare', stack: 70, baseValue: 24, tags: ['reagent','portal'], description: 'Giảm rủi ro expedition.' },
+  { id: 'reagent_flux', title: 'Dung Dịch Thông Thao', rarity: 'rare', stack: 70, baseValue: 26, tags: ['reagent','tech'], description: 'Tăng tốc research.' },
+  { id: 'reagent_aurora', title: 'Tinh Sương Cực Quang', rarity: 'epic', stack: 40, baseValue: 48, tags: ['reagent','legend','mood'], description: 'Buff morale lớn.' },
+  { id: 'relic_tablet', title: 'Bia Khắc Cổ', rarity: 'rare', stack: 30, baseValue: 32, tags: ['relic','research'], description: 'Giải mã mở tech ẩn.' },
+  { id: 'relic_core_fragment', title: 'Mảnh Lõi Cổ', rarity: 'epic', stack: 20, baseValue: 70, tags: ['relic','legend'], description: 'Cho phép unlock tech final.' },
+  { id: 'powder_frost', title: 'Bột Lạnh', rarity: 'common', stack: 250, baseValue: 2, tags: ['material','alchemical'], description: 'Bột chế tác cơ bản.' },
+  { id: 'powder_conduct', title: 'Bột Dẫn Nhiệt', rarity: 'uncommon', stack: 200, baseValue: 5, tags: ['alchemical'], description: 'Tăng hiệu suất heat tower.' },
+  { id: 'powder_glimmer', title: 'Bột Lấp Lánh', rarity: 'rare', stack: 120, baseValue: 18, tags: ['alchemical','mood'], description: 'Dùng trong vật phẩm morale.' },
+  { id: 'fungus_ice', title: 'Nấm Băng', rarity: 'common', stack: 240, baseValue: 2, tags: ['food','reagent'], description: 'Nguồn thực phẩm/thuốc.' },
+  { id: 'fungus_biolume', title: 'Nấm Quang Hàn', rarity: 'uncommon', stack: 180, baseValue: 6, tags: ['food','mood'], description: 'Tăng morale khi ăn.' },
+  { id: 'fungus_mindcap', title: 'Nấm Tâm Mạch', rarity: 'rare', stack: 100, baseValue: 22, tags: ['sanity','reagent'], description: 'Ổn định tâm trí mạnh.' },
+  { id: 'gas_chill', title: 'Khí Lạnh Nén', rarity: 'uncommon', stack: 140, baseValue: 8, tags: ['energy'], description: 'Phụ trợ thiết bị nhiệt.' },
+  { id: 'gas_void', title: 'Khí Hư Không', rarity: 'rare', stack: 100, baseValue: 26, tags: ['portal','energy'], description: 'Chất xúc tiến cổng.' },
+  { id: 'fiber_ice', title: 'Sợi Băng', rarity: 'common', stack: 260, baseValue: 2, tags: ['material','textile'], description: 'Nguyên liệu vải lạnh.' },
+  { id: 'fiber_crystal', title: 'Sợi Tinh Thể', rarity: 'uncommon', stack: 160, baseValue: 6, tags: ['textile','rare'], description: 'Tăng bền đồ bảo hộ.' },
+  { id: 'fiber_psy', title: 'Sợi Tâm Ảnh', rarity: 'rare', stack: 100, baseValue: 20, tags: ['textile','sanity'], description: 'Dệt áo choáng bảo hộ tâm trí.' },
+  { id: 'dust_ancient', title: 'Bụi Cổ', rarity: 'rare', stack: 120, baseValue: 18, tags: ['relic','research'], description: 'Dùng khai mở tech cổ.' },
+  { id: 'shard_frost', title: 'Mảnh Băng Sắc', rarity: 'common', stack: 260, baseValue: 2, tags: ['material'], description: 'Mảnh băng dùng chế dao.' },
+  { id: 'shard_arcane', title: 'Mảnh Pháp Hàn', rarity: 'uncommon', stack: 160, baseValue: 7, tags: ['arcane'], description: 'Dẫn truyền phép lạnh.' },
+  { id: 'shard_void', title: 'Mảnh Hư Không', rarity: 'rare', stack: 90, baseValue: 24, tags: ['portal','arcane'], description: 'Cần cho portal frame cao cấp.' },
+  { id: 'core_stasis', title: 'Lõi Trì Trệ', rarity: 'epic', stack: 40, baseValue: 58, tags: ['energy','legend'], description: 'Ổn định những cấu trúc lớn.' },
+  { id: 'liquid_brine', title: 'Dung Dịch Muối Lạnh', rarity: 'common', stack: 220, baseValue: 2, tags: ['reagent'], description: 'Dung dịch bảo quản.' },
+  { id: 'liquid_glacier', title: 'Nước Sông Băng', rarity: 'uncommon', stack: 200, baseValue: 5, tags: ['reagent','mood'], description: 'Tinh khiết tăng sĩ khí.' },
+  { id: 'liquid_flux', title: 'Dòng Dung Chuyển', rarity: 'rare', stack: 120, baseValue: 19, tags: ['reagent','tech'], description: 'Gia tốc chế tạo.' },
+  { id: 'liquid_aether', title: 'Dung Dịch Aether', rarity: 'epic', stack: 60, baseValue: 44, tags: ['legend','portal'], description: 'Kết nối khe chiều sâu.' },
+  { id: 'ash_frostbone', title: 'Tro Cốt Băng', rarity: 'uncommon', stack: 180, baseValue: 6, tags: ['material','ritual'], description: 'Thành phần nghi thức.' },
+  { id: 'bone_chill', title: 'Xương Lạnh', rarity: 'common', stack: 220, baseValue: 2, tags: ['material'], description: 'Xương sinh vật lạnh.' },
+  { id: 'bone_void', title: 'Xương Hư Không', rarity: 'rare', stack: 80, baseValue: 25, tags: ['portal','ritual'], description: 'Tăng hiệu quả mở cổng.' },
+  { id: 'gem_frost', title: 'Đá Quý Băng', rarity: 'uncommon', stack: 100, baseValue: 12, tags: ['gem'], description: 'Trang sức morale.' },
+  { id: 'gem_mind', title: 'Đá Quý Tâm Trí', rarity: 'rare', stack: 80, baseValue: 28, tags: ['gem','sanity'], description: 'Giảm suy giảm sanity.' },
+  { id: 'gem_void', title: 'Đá Quý Hư Không', rarity: 'epic', stack: 50, baseValue: 65, tags: ['gem','legend','portal'], description: 'Khuếch đại năng lượng hố nứt.' },
+  { id: 'spore_veil', title: 'Bào Tử Màn Lạnh', rarity: 'uncommon', stack: 160, baseValue: 7, tags: ['reagent','sanity'], description: 'Chưng cất thuốc tâm lý.' },
+  { id: 'spore_radiant', title: 'Bào Tử Rực', rarity: 'rare', stack: 90, baseValue: 27, tags: ['reagent','mood'], description: 'Tăng morale khi dùng nghi lễ.' }
+];

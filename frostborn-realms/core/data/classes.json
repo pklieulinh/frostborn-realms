@@ -1,0 +1,120 @@
+{
+  "version": 1,
+  "classes": [
+    {
+      "id": "Worker",
+      "primary_focus": ["gather","build","logistics"],
+      "base_mods": { "gather_speed": 0.05, "build_speed": 0.05 },
+      "subclasses": [
+        { "id": "Builder", "mods": { "build_speed": 0.15 } },
+        { "id": "Lumberjack", "mods": { "gather_speed": 0.18, "wood_yield": 0.1 } },
+        { "id": "Carrier", "mods": { "carry_capacity": 0.25 } },
+        { "id": "Repairer", "mods": { "repair_speed": 0.3 } }
+      ]
+    },
+    {
+      "id": "Scholar",
+      "primary_focus": ["research","analysis"],
+      "base_mods": { "research_speed": 0.15 },
+      "subclasses": [
+        { "id": "Researcher", "mods": { "research_speed": 0.1 } },
+        { "id": "Runologist", "mods": { "portal_quality_bonus": 0.02, "research_points": 0.02 } },
+        { "id": "Archivist", "mods": { "research_speed": 0.05, "research_points": 0.03 } }
+      ]
+    },
+    {
+      "id": "Engineer",
+      "primary_focus": ["build","refine","mechanism"],
+      "base_mods": { "build_speed": 0.1, "refine_speed": 0.1 },
+      "subclasses": [
+        { "id": "Mechanic", "mods": { "machine_maintenance": 0.2 } },
+        { "id": "Smelter", "mods": { "refine_speed": 0.15 } },
+        { "id": "Structural", "mods": { "build_quality": 0.07 } }
+      ]
+    },
+    {
+      "id": "Scout",
+      "primary_focus": ["expedition","explore"],
+      "base_mods": { "move_speed": 0.1, "expedition_duration_mult": -0.05 },
+      "subclasses": [
+        { "id": "Pathfinder", "mods": { "expedition_duration_mult": -0.05 } },
+        { "id": "Surveyor", "mods": { "vision_range": 2 } },
+        { "id": "Courier", "mods": { "move_speed": 0.08, "carry_capacity": 0.1 } }
+      ]
+    },
+    {
+      "id": "Soldier",
+      "primary_focus": ["combat","defense"],
+      "base_mods": { "attack_power": 0.1, "damage_taken_mult": -0.02 },
+      "subclasses": [
+        { "id": "Guard", "mods": { "damage_taken_mult": -0.05 } },
+        { "id": "Vanguard", "mods": { "attack_power": 0.08 } },
+        { "id": "Warden", "mods": { "aura_morale": 0.02 } }
+      ]
+    },
+    {
+      "id": "Hunter",
+      "primary_focus": ["combat","gather_food"],
+      "base_mods": { "attack_power": 0.05, "food_yield": 0.1 },
+      "subclasses": [
+        { "id": "Trapper", "mods": { "expedition_loot_mult": 0.05 } },
+        { "id": "BeastSlayer", "mods": { "attack_power_vs_beast": 0.15 } }
+      ]
+    },
+    {
+      "id": "Medic",
+      "primary_focus": ["healing","support"],
+      "base_mods": { "healing_speed": 0.2 },
+      "subclasses": [
+        { "id": "Herbalist", "mods": { "potion_brew": 0.15 } },
+        { "id": "FieldMedic", "mods": { "revive_speed": 0.1 } }
+      ]
+    },
+    {
+      "id": "Priest",
+      "primary_focus": ["morale","ritual"],
+      "base_mods": { "aura_morale": 0.03, "ritual_power": 0.1 },
+      "subclasses": [
+        { "id": "Chaplain", "mods": { "stress_reduction": 0.05 } },
+        { "id": "Seer", "mods": { "portal_stability": 0.05 } }
+      ]
+    },
+    {
+      "id": "Artificer",
+      "primary_focus": ["enchant","device"],
+      "base_mods": { "enchant_speed": 0.15 },
+      "subclasses": [
+        { "id": "Runesmith", "mods": { "portal_quality_bonus": 0.03 } },
+        { "id": "Gadgeteer", "mods": { "device_build_speed": 0.15 } }
+      ]
+    },
+    {
+      "id": "Farmer",
+      "primary_focus": ["grow","food_process"],
+      "base_mods": { "grow_speed": 0.15 },
+      "subclasses": [
+        { "id": "Cultivator", "mods": { "grow_yield": 0.1 } },
+        { "id": "Preserver", "mods": { "food_spoil_mult": -0.1 } }
+      ]
+    },
+    {
+      "id": "Merchant",
+      "primary_focus": ["trade","logistics"],
+      "base_mods": { "trade_value": 0.1 },
+      "subclasses": [
+        { "id": "Broker", "mods": { "trade_value": 0.05 } },
+        { "id": "Quartermaster", "mods": { "storage_efficiency": 0.1 } }
+      ]
+    },
+    {
+      "id": "Leader",
+      "primary_focus": ["authority","multi"],
+      "base_mods": { "aura_morale": 0.05, "decision_quality": 0.05 },
+      "subclasses": [
+        { "id": "Commander", "mods": { "attack_power_allies": 0.03 } },
+        { "id": "Administrator", "mods": { "resource_efficiency": 0.05 } },
+        { "id": "Visionary", "mods": { "research_speed": 0.05, "portal_quality_bonus": 0.02 } }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "base_loot": { "FrostCrystal": 1 },
+  "rare": [
+    { "item": "AncientShard", "chance": 0.1, "min": 1, "max": 2 },
+    { "item": "RuneFragment", "chance": 0.15, "min": 1, "max": 1 }
+  ]
+}

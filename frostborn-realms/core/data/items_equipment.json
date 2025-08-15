@@ -1,0 +1,66 @@
+{
+  "version": 1,
+  "item_categories": {
+    "tool": "Công cụ tăng hiệu suất",
+    "weapon": "Vũ khí",
+    "armor": "Giáp / trang phục",
+    "accessory": "Trang sức / bùa",
+    "consumable": "Vật phẩm tiêu thụ",
+    "module": "Nâng cấp công trình",
+    "blueprint": "Bản vẽ đặc biệt",
+    "device": "Thiết bị đặt được",
+    "ritual": "Dụng cụ nghi lễ",
+    "upgrade": "Nâng cấp meta"
+  },
+  "items": [
+    { "id": "ToolAxeBasic", "name": "Rìu Thô", "slot": "hand", "category": "tool", "tier": 0, "effects": { "gather_speed": 0.10 }, "craft": { "WoodCold": 8, "Stone": 4 } },
+    { "id": "ToolAxeIron", "name": "Rìu Sắt", "slot": "hand", "category": "tool", "tier": 1, "effects": { "gather_speed": 0.20 }, "craft": { "IngotIron": 4, "RefinedTimber": 2 } },
+    { "id": "ToolSaw", "name": "Cưa", "slot": "hand", "category": "tool", "tier": 1, "effects": { "build_speed": 0.15 }, "craft": { "RefinedTimber": 6, "GearCog": 2 } },
+    { "id": "ToolHammerAlloy", "name": "Búa Hợp Kim", "slot": "hand", "category": "tool", "tier": 2, "effects": { "build_speed": 0.30 }, "craft": { "AlloyFroststeel": 2, "PlateAlloy": 1 } },
+    { "id": "ToolPickBronze", "name": "Cuốc Đồng Thiếc", "slot": "hand", "category": "tool", "tier": 1, "effects": { "gather_speed": 0.18, "mine_bonus": 0.15 }, "craft": { "IngotBronze": 3, "RefinedTimber": 2 } },
+    { "id": "ToolPickFroststeel", "name": "Cuốc Froststeel", "slot": "hand", "category": "tool", "tier": 3, "effects": { "gather_speed": 0.35, "mine_bonus": 0.25 }, "craft": { "AlloyFroststeel": 3, "CatalystArcane": 1 } },
+
+    { "id": "WeaponClub", "name": "Gậy Gỗ", "slot": "hand", "category": "weapon", "tier": 0, "effects": { "attack_power": 4 } , "craft": { "WoodCold": 6 } },
+    { "id": "WeaponSpearBone", "name": "Giáo Xương", "slot": "hand", "category": "weapon", "tier": 1, "effects": { "attack_power": 6, "reach": 1 }, "craft": { "BoneHardened": 2, "RefinedTimber": 2 } },
+    { "id": "WeaponBladeIron", "name": "Kiếm Sắt", "slot": "hand", "category": "weapon", "tier": 1, "effects": { "attack_power": 8 }, "craft": { "IngotIron": 3, "LeatherTreated": 1 } },
+    { "id": "WeaponBladeFrost", "name": "Kiếm Băng Thép", "slot": "hand", "category": "weapon", "tier": 2, "effects": { "attack_power": 11, "cold_proc": 0.15 }, "craft": { "IngotIron": 2, "AlloyFroststeel": 1, "EssenceFrost": 1 } },
+    { "id": "WeaponHammerAlloy", "name": "Đại Búa Hợp Kim", "slot": "hand", "category": "weapon", "tier": 3, "effects": { "attack_power": 15, "stagger": 0.2 }, "craft": { "AlloyFroststeel": 2, "PlateAlloy": 1, "GearCog": 2 } },
+    { "id": "WeaponRunicGlaive", "name": "Liên Kích Rune", "slot": "hand", "category": "weapon", "tier": 3, "effects": { "attack_power": 14, "arcane_proc": 0.2 }, "craft": { "AlloyFroststeel": 1, "CircuitRune": 1, "RuneFragment": 4 } },
+
+    { "id": "ArmorClothBasic", "name": "Áo Vải Ấm", "slot": "body", "category": "armor", "tier": 0, "effects": { "cold_resist": 5 } , "craft": { "ClothWoven": 4, "FurThick": 2 } },
+    { "id": "ArmorLeather", "name": "Giáp Da", "slot": "body", "category": "armor", "tier": 1, "effects": { "defense": 4, "cold_resist": 3 }, "craft": { "LeatherTreated": 5 } },
+    { "id": "ArmorChitin", "name": "Giáp Kitin", "slot": "body", "category": "armor", "tier": 2, "effects": { "defense": 7, "poison_resist": 0.2 }, "craft": { "ChitinFragment": 6, "ResinFrozen": 2 } },
+    { "id": "ArmorAlloyPlate", "name": "Giáp Hợp Kim", "slot": "body", "category": "armor", "tier": 3, "effects": { "defense": 11, "cold_resist": 8 }, "craft": { "PlateAlloy": 4, "MeshInsulate": 2 } },
+    { "id": "ArmorFroststeelRune", "name": "Giáp Froststeel Rune", "slot": "body", "category": "armor", "tier": 4, "effects": { "defense": 14, "aura_morale": 0.02, "cold_resist": 12 }, "craft": { "AlloyFroststeel": 2, "CircuitRune": 2, "EssenceHarmony": 1 } },
+
+    { "id": "AccCharmMinor", "name": "Bùa Nhỏ", "slot": "accessory", "category": "accessory", "tier": 1, "effects": { "morale_gain": 0.01 }, "craft": { "CharmMinor": 1, "ClothWoven": 1 } },
+    { "id": "AccCharmGreater", "name": "Bùa Lớn", "slot": "accessory", "category": "accessory", "tier": 2, "effects": { "morale_gain": 0.02, "stress_reduction": 0.02 }, "craft": { "CharmGreater": 1, "ClothWoven": 2 } },
+    { "id": "AccRuneLens", "name": "Thấu Kính Rune", "slot": "accessory", "category": "accessory", "tier": 3, "effects": { "research_speed": 0.12 }, "craft": { "LensRunic": 1, "CircuitRune": 1 } },
+    { "id": "AccSigilHarmony", "name": "Ấn Hòa Hợp", "slot": "accessory", "category": "accessory", "tier": 3, "effects": { "aura_morale": 0.03 }, "craft": { "SigilMajor": 1, "EssenceHarmony": 1 } },
+
+    { "id": "MealHeartyItem", "ref_resource": "MealHearty", "category": "consumable", "tier": 2, "effects": { "morale_instant": 5, "stamina_restore": 15 } },
+    { "id": "PotionStaminaItem", "ref_resource": "PotionStamina", "category": "consumable", "tier": 2, "effects": { "stamina_restore": 30 } },
+    { "id": "PotionFocusItem", "ref_resource": "PotionFocus", "category": "consumable", "tier": 2, "effects": { "research_points_flat": 2 } },
+    { "id": "ElixirFrostwardItem", "ref_resource": "ElixirFrostward", "category": "consumable", "tier": 3, "effects": { "buff_cold_resist": 15, "duration": 180 } },
+
+    { "id": "ModuleHeatCore", "name": "Module Lõi Nhiệt", "category": "module", "tier": 2, "effects": { "heat_output_add": 40 }, "install_target": "HeatStation", "craft": { "CoreThermal": 1, "MeshInsulate": 2 } },
+    { "id": "ModulePortalStabilizer", "name": "Module Ổn Định Cổng", "category": "module", "tier": 3, "effects": { "portal_quality_add": 0.05 }, "install_target": "PortalGate", "craft": { "CatalystArcane": 1, "CircuitRune": 1, "LensRunic": 1 } },
+    { "id": "ModuleResearchAmplifier", "name": "Module Khuếch Đại", "category": "module", "tier": 3, "effects": { "research_speed": 0.20 }, "install_target": "ResearchStation", "craft": { "CoreArcane": 1, "CharmGreater": 1 } },
+    { "id": "ModuleForgeInfusion", "name": "Module Truyền Hàn", "category": "module", "tier": 3, "effects": { "refine_speed": 0.25 }, "install_target": "Foundry", "craft": { "EmberChill": 1, "PlateAlloy": 2 } },
+
+    { "id": "BlueprintPortalUpgradeI", "name": "Bản Vẽ Nâng Cấp Cổng I", "category": "blueprint", "tier": 2, "unlock": { "portal_quality_bonus": 0.02 }, "cost_research": 8 },
+    { "id": "BlueprintPortalUpgradeII", "name": "Bản Vẽ Nâng Cấp Cổng II", "category": "blueprint", "tier": 3, "unlock": { "portal_quality_bonus": 0.04 }, "cost_research": 14 },
+    { "id": "BlueprintAscensionSigil", "name": "Bản Vẽ Ấn Thăng Hoa", "category": "blueprint", "tier": 4, "unlock": { "ascension_progress": 1 }, "cost_research": 25 },
+
+    { "id": "DeviceFieldHeater", "name": "Thiết Bị Gia Nhiệt Trường", "category": "device", "tier": 2, "effects": { "heat_radius_add": 2 }, "craft": { "CoreThermal": 1, "RefinedTimber": 4, "GearCog": 2 } },
+    { "id": "DeviceSignalBeacon", "name": "Đèn Hiệu", "category": "device", "tier": 2, "effects": { "expedition_return_speed": 0.10 }, "craft": { "RefinedTimber": 4, "IngotIron": 2, "EssenceFrost": 1 } },
+    { "id": "DeviceMoraleDrum", "name": "Trống Sĩ Khí", "category": "device", "tier": 1, "effects": { "aura_morale": 0.02 }, "craft": { "RefinedTimber": 3, "LeatherTreated": 2 } },
+
+    { "id": "RitualFocusMinor", "name": "Tâm Điểm Nghi Lễ Nhỏ", "category": "ritual", "tier": 2, "effects": { "ritual_power": 0.10 }, "craft": { "SigilMinor": 1, "EssenceFrost": 1 } },
+    { "id": "RitualFocusMajor", "name": "Tâm Điểm Nghi Lễ Lớn", "category": "ritual", "tier": 3, "effects": { "ritual_power": 0.20 }, "craft": { "SigilMajor": 1, "CatalystArcane": 1 } },
+    { "id": "RitualAnchorVoid", "name": "Neo Hư Vô", "category": "ritual", "tier": 4, "effects": { "portal_stability": 0.15 }, "craft": { "EssenceVoid": 1, "CoreArcane": 1, "ShardVoid": 1 } },
+
+    { "id": "UpgradeAuthorityToken", "name": "Nâng Cấp Quyền Lực", "category": "upgrade", "tier": 2, "effects": { "officer_slots": 1 }, "consume": { "TokenAuthority": 1 } },
+    { "id": "UpgradeResearchQuota", "name": "Mở Rộng Nghiên Cứu", "category": "upgrade", "tier": 2, "effects": { "research_queue": 1 }, "consume": { "ScrollKnowledge": 2 } }
+  ]
+}

@@ -1,0 +1,35 @@
+[
+  {
+    "id":"storage_crate",
+    "category":"Storage",
+    "cost":[{"item":"wood_log","amount":30}],
+    "work_to_build_base":160,
+    "supports_stuff":false,
+    "hitpoints_base":180,
+    "comps":[{"type":"Storage","capacity":500,"filterPresetId":"all"}],
+    "quality_enabled":false,
+    "beauty":0
+  },
+  {
+    "id":"wood_wall",
+    "category":"Structure",
+    "cost":[{"item":"wood_log","amount":5}],
+    "work_to_build_base":50,
+    "supports_stuff":false,
+    "hitpoints_base":120,
+    "comps":[],
+    "quality_enabled":false,
+    "beauty":0
+  },
+  {
+    "id":"small_generator",
+    "category":"Power",
+    "cost":[{"item":"iron_ingot","amount":25},{"item":"wood_log","amount":40}],
+    "work_to_build_base":400,
+    "supports_stuff":false,
+    "hitpoints_base":250,
+    "comps":[{"type":"PowerProducer","watts":600}],
+    "quality_enabled":false,
+    "beauty":-2
+  }
+]

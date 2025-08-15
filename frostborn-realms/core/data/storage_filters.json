@@ -1,0 +1,6 @@
+[
+  {"id":"all","allow_categories":["Raw","Material","Food","FoodRaw","Processed","Tool","Weapon","Apparel","Special","Organic"],"priority":1},
+  {"id":"food_only","allow_categories":["Food","FoodRaw","Processed"],"priority":2},
+  {"id":"equipment","allow_categories":["Tool","Weapon","Apparel"],"priority":2},
+  {"id":"materials_mid","allow_categories":["Material","Raw","Special"],"priority":1}
+]

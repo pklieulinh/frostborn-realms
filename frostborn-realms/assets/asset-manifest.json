@@ -1,0 +1,40 @@
+{
+  "images": [
+    {
+      "id": "tiles_ice_world",
+      "url": "assets/tilesets/ice_world.png"
+    },
+    {
+      "id": "tiles_dungeon_base",
+      "url": "assets/tilesets/dungeon_base.png"
+    },
+    {
+      "id": "chars_settlers",
+      "url": "assets/characters/settlers.png"
+    },
+    {
+      "id": "chars_monsters",
+      "url": "assets/characters/monsters.png"
+    },
+    {
+      "id": "icons_resources",
+      "url": "assets/icons/resources.png"
+    },
+    {
+      "id": "icons_items",
+      "url": "assets/icons/items.png"
+    },
+    {
+      "id": "fx_portal_glow",
+      "url": "assets/fx/portal_glow.png"
+    },
+    {
+      "id": "fx_heat_aura",
+      "url": "assets/fx/heat_aura.png"
+    },
+    {
+      "id": "ui_frame_panel",
+      "url": "assets/ui/frame_panel.png"
+    }
+  ]
+}

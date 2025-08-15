@@ -1,0 +1,7 @@
+{
+  "images": [
+    { "id": "leader", "path": "sprites/leader.png", "tags": ["npc","leader"] },
+    { "id": "worker", "file": "sprites/worker.png", "tags": ["npc","worker"] },
+    { "id": "portal", "rel_path": "sprites/portal.png", "category": "fx" }
+  ]
+}

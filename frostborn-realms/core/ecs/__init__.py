@@ -1,0 +1,40 @@
+# ECS exports tối giản – không import AI để tránh vòng phụ thuộc.
+from .world import World, GridMap
+from .entity_manager import EntityManager
+from .components import (
+    Position,
+    Renderable,
+    Role,
+    ResourceInventory,
+    Movement,
+    TaskAgent,
+    ResourceNode,
+    Building,
+    ConstructionSite,
+    HeatEmitter,
+    PortalGate,
+    ExpeditionTeam,
+    LeaderAI,
+    Needs,
+    COMPONENT_TYPES,
+)
+__all__ = [
+    "World",
+    "GridMap",
+    "EntityManager",
+    "Position",
+    "Renderable",
+    "Role",
+    "ResourceInventory",
+    "Movement",
+    "TaskAgent",
+    "ResourceNode",
+    "Building",
+    "ConstructionSite",
+    "HeatEmitter",
+    "PortalGate",
+    "ExpeditionTeam",
+    "LeaderAI",
+    "Needs",
+    "COMPONENT_TYPES",
+]
