@@ -47,6 +47,10 @@ from .predator_loot_system import predator_loot_system
 from .gather_balance_system import gather_balance_system
 from .housing_capacity_system import housing_capacity_system
 
+# Enhanced systems for improved gameplay
+from .enhanced_crafting_system import enhanced_crafting_system
+from .enhanced_storage_system import enhanced_storage_system
+
 __all__ = [
     "movement_system","needs_system","task_system","leader_system","events_system","expedition_system","heat_system",
     "morale_system","predator_spawn_system","predator_ai_system","guard_system","combat_system","traits_system",
@@ -56,5 +60,7 @@ __all__ = [
     "construction_system","attribute_system","attribute_inject_system","skills_system","skills_xp_hooks",
     "defs_system","item_stack_system","blueprint_system","construction_def_system","leader_def_system",
     "colonist_growth_system","legacy_resource_convert_system","reproduction_system","threat_response_system",
-    "predator_loot_system","gather_balance_system","housing_capacity_system"
+    "predator_loot_system","gather_balance_system","housing_capacity_system",
+    # Enhanced systems
+    "enhanced_crafting_system","enhanced_storage_system"
 ]

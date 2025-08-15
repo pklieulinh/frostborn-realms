@@ -1,42 +1,202 @@
 [
-  {"id":"wood_log","category":"Raw","stack_limit":100,"base_hp":40,"mass":1.0},
-  {"id":"stone_block","category":"Raw","stack_limit":80,"base_hp":80,"mass":1.2},
-  {"id":"iron_ore","category":"Raw","stack_limit":60,"base_hp":55,"mass":1.4},
-  {"id":"copper_ore","category":"Raw","stack_limit":60,"base_hp":55,"mass":1.3},
-  {"id":"tin_ore","category":"Raw","stack_limit":60,"base_hp":55,"mass":1.2},
-  {"id":"iron_ingot","category":"Material","stack_limit":50,"base_hp":90,"mass":1.5},
-  {"id":"copper_ingot","category":"Material","stack_limit":50,"base_hp":85,"mass":1.4},
-  {"id":"tin_ingot","category":"Material","stack_limit":50,"base_hp":80,"mass":1.3},
-  {"id":"steel_ingot","category":"Material","stack_limit":40,"base_hp":110,"mass":1.6},
-  {"id":"crystal_frost","category":"Special","stack_limit":40,"base_hp":70,"mass":0.8},
-  {"id":"orichalcum_shard","category":"Special","stack_limit":30,"base_hp":90,"mass":0.9},
-  {"id":"hide_raw","category":"Organic","stack_limit":70,"base_hp":30,"mass":0.5},
-  {"id":"hide_tanned","category":"Material","stack_limit":70,"base_hp":55,"mass":0.5},
-  {"id":"fur_warm","category":"Material","stack_limit":60,"base_hp":50,"mass":0.5},
-  {"id":"fiber_plant","category":"Organic","stack_limit":90,"base_hp":25,"mass":0.3},
-  {"id":"cloth_roll","category":"Material","stack_limit":60,"base_hp":45,"mass":0.4},
-  {"id":"leather_strip","category":"Material","stack_limit":80,"base_hp":45,"mass":0.2},
-  {"id":"raw_meat","category":"FoodRaw","stack_limit":60,"base_hp":25,"mass":0.6},
-  {"id":"food_ration","category":"Food","stack_limit":80,"base_hp":40,"mass":0.5},
-  {"id":"hearty_meal","category":"Food","stack_limit":50,"base_hp":45,"mass":0.6},
-  {"id":"grain_raw","category":"FoodRaw","stack_limit":90,"base_hp":35,"mass":0.4},
-  {"id":"flour_sack","category":"Processed","stack_limit":50,"base_hp":40,"mass":0.7},
-  {"id":"berry_frozen","category":"FoodRaw","stack_limit":80,"base_hp":30,"mass":0.4},
-  {"id":"stone_axe","category":"Tool","stack_limit":1,"base_hp":80,"mass":2.2},
-  {"id":"iron_axe","category":"Tool","stack_limit":1,"base_hp":140,"mass":2.5},
-  {"id":"iron_pick","category":"Tool","stack_limit":1,"base_hp":140,"mass":2.7},
-  {"id":"wood_hoe","category":"Tool","stack_limit":1,"base_hp":60,"mass":1.8},
-  {"id":"iron_sickle","category":"Tool","stack_limit":1,"base_hp":110,"mass":1.9},
-  {"id":"hammer_build","category":"Tool","stack_limit":1,"base_hp":120,"mass":1.6},
-  {"id":"saw_iron","category":"Tool","stack_limit":1,"base_hp":120,"mass":1.9},
-  {"id":"short_bow","category":"Weapon","stack_limit":1,"base_hp":100,"mass":3.0},
-  {"id":"spear_wood","category":"Weapon","stack_limit":1,"base_hp":90,"mass":2.8},
-  {"id":"spear_iron","category":"Weapon","stack_limit":1,"base_hp":140,"mass":3.2},
-  {"id":"axe_battle","category":"Weapon","stack_limit":1,"base_hp":150,"mass":3.4},
-  {"id":"sword_short","category":"Weapon","stack_limit":1,"base_hp":150,"mass":3.0},
-  {"id":"parka_fur","category":"Apparel","stack_limit":1,"base_hp":140,"mass":2.2},
-  {"id":"coat_leather","category":"Apparel","stack_limit":1,"base_hp":130,"mass":2.0},
-  {"id":"boots_fur","category":"Apparel","stack_limit":1,"base_hp":80,"mass":1.0},
-  {"id":"gloves_wool","category":"Apparel","stack_limit":1,"base_hp":60,"mass":0.6},
-  {"id":"hat_fur","category":"Apparel","stack_limit":1,"base_hp":70,"mass":0.5}
+  // Raw Materials - Basic Tier
+  {"id":"wood_log","category":"Raw","stack_limit":200,"base_hp":40,"mass":1.0,"tier":1,"value":1},
+  {"id":"wood_hardwood","category":"Raw","stack_limit":150,"base_hp":60,"mass":1.2,"tier":2,"value":3},
+  {"id":"wood_ironbark","category":"Raw","stack_limit":100,"base_hp":90,"mass":1.5,"tier":3,"value":8},
+  {"id":"stone_block","category":"Raw","stack_limit":150,"base_hp":80,"mass":1.2,"tier":1,"value":1},
+  {"id":"stone_granite","category":"Raw","stack_limit":120,"base_hp":120,"mass":1.5,"tier":2,"value":4},
+  {"id":"stone_marble","category":"Raw","stack_limit":80,"base_hp":150,"mass":1.8,"tier":3,"value":12},
+  
+  // Ores and Minerals
+  {"id":"iron_ore","category":"Raw","stack_limit":100,"base_hp":55,"mass":1.4,"tier":2,"value":3},
+  {"id":"copper_ore","category":"Raw","stack_limit":100,"base_hp":55,"mass":1.3,"tier":2,"value":3},
+  {"id":"tin_ore","category":"Raw","stack_limit":100,"base_hp":55,"mass":1.2,"tier":2,"value":3},
+  {"id":"gold_ore","category":"Raw","stack_limit":75,"base_hp":65,"mass":1.8,"tier":3,"value":15},
+  {"id":"silver_ore","category":"Raw","stack_limit":80,"base_hp":60,"mass":1.6,"tier":3,"value":12},
+  {"id":"coal","category":"Raw","stack_limit":150,"base_hp":30,"mass":0.8,"tier":1,"value":2},
+  {"id":"crystal_frost","category":"Special","stack_limit":50,"base_hp":70,"mass":0.8,"tier":3,"value":20},
+  {"id":"crystal_fire","category":"Special","stack_limit":50,"base_hp":70,"mass":0.8,"tier":3,"value":25},
+  {"id":"orichalcum_ore","category":"Special","stack_limit":30,"base_hp":90,"mass":2.0,"tier":4,"value":50},
+  {"id":"mythril_ore","category":"Special","stack_limit":25,"base_hp":120,"mass":2.5,"tier":5,"value":100},
+  
+  // Processed Materials
+  {"id":"iron_ingot","category":"Material","stack_limit":75,"base_hp":90,"mass":1.5,"tier":2,"value":8},
+  {"id":"copper_ingot","category":"Material","stack_limit":75,"base_hp":85,"mass":1.4,"tier":2,"value":8},
+  {"id":"tin_ingot","category":"Material","stack_limit":75,"base_hp":80,"mass":1.3,"tier":2,"value":8},
+  {"id":"steel_ingot","category":"Material","stack_limit":60,"base_hp":110,"mass":1.6,"tier":3,"value":20},
+  {"id":"gold_ingot","category":"Material","stack_limit":50,"base_hp":100,"mass":2.0,"tier":3,"value":40},
+  {"id":"silver_ingot","category":"Material","stack_limit":50,"base_hp":95,"mass":1.8,"tier":3,"value":35},
+  {"id":"bronze_ingot","category":"Material","stack_limit":60,"base_hp":95,"mass":1.5,"tier":2,"value":15},
+  {"id":"orichalcum_ingot","category":"Material","stack_limit":25,"base_hp":180,"mass":2.2,"tier":4,"value":150},
+  {"id":"mythril_ingot","category":"Material","stack_limit":20,"base_hp":220,"mass":2.8,"tier":5,"value":300},
+  
+  // Organic Materials
+  {"id":"hide_raw","category":"Organic","stack_limit":100,"base_hp":30,"mass":0.5,"tier":1,"value":2},
+  {"id":"hide_thick","category":"Organic","stack_limit":80,"base_hp":45,"mass":0.7,"tier":2,"value":5},
+  {"id":"hide_exotic","category":"Organic","stack_limit":50,"base_hp":60,"mass":0.9,"tier":3,"value":15},
+  {"id":"hide_tanned","category":"Material","stack_limit":80,"base_hp":55,"mass":0.5,"tier":2,"value":6},
+  {"id":"leather_quality","category":"Material","stack_limit":60,"base_hp":80,"mass":0.6,"tier":3,"value":18},
+  {"id":"fur_warm","category":"Material","stack_limit":70,"base_hp":50,"mass":0.5,"tier":2,"value":8},
+  {"id":"fur_arctic","category":"Material","stack_limit":50,"base_hp":70,"mass":0.6,"tier":3,"value":20},
+  {"id":"fiber_plant","category":"Organic","stack_limit":150,"base_hp":25,"mass":0.3,"tier":1,"value":1},
+  {"id":"fiber_cotton","category":"Organic","stack_limit":120,"base_hp":35,"mass":0.3,"tier":2,"value":3},
+  {"id":"fiber_silk","category":"Organic","stack_limit":80,"base_hp":50,"mass":0.2,"tier":3,"value":12},
+  {"id":"cloth_rough","category":"Material","stack_limit":80,"base_hp":45,"mass":0.4,"tier":2,"value":6},
+  {"id":"cloth_fine","category":"Material","stack_limit":60,"base_hp":65,"mass":0.4,"tier":3,"value":18},
+  {"id":"cloth_silk","category":"Material","stack_limit":40,"base_hp":85,"mass":0.3,"tier":4,"value":45},
+  
+  // Food Items - Expanded
+  {"id":"raw_meat","category":"FoodRaw","stack_limit":75,"base_hp":25,"mass":0.6,"tier":1,"value":3},
+  {"id":"raw_fish","category":"FoodRaw","stack_limit":75,"base_hp":20,"mass":0.4,"tier":1,"value":4},
+  {"id":"raw_poultry","category":"FoodRaw","stack_limit":60,"base_hp":30,"mass":0.5,"tier":1,"value":5},
+  {"id":"exotic_meat","category":"FoodRaw","stack_limit":50,"base_hp":35,"mass":0.8,"tier":2,"value":12},
+  {"id":"grain_raw","category":"FoodRaw","stack_limit":120,"base_hp":35,"mass":0.4,"tier":1,"value":2},
+  {"id":"grain_wheat","category":"FoodRaw","stack_limit":100,"base_hp":40,"mass":0.4,"tier":2,"value":4},
+  {"id":"grain_barley","category":"FoodRaw","stack_limit":100,"base_hp":38,"mass":0.4,"tier":2,"value":4},
+  {"id":"berry_frozen","category":"FoodRaw","stack_limit":100,"base_hp":30,"mass":0.4,"tier":1,"value":2},
+  {"id":"berry_summer","category":"FoodRaw","stack_limit":80,"base_hp":35,"mass":0.3,"tier":2,"value":5},
+  {"id":"vegetables_root","category":"FoodRaw","stack_limit":100,"base_hp":40,"mass":0.5,"tier":1,"value":3},
+  {"id":"vegetables_leafy","category":"FoodRaw","stack_limit":80,"base_hp":25,"mass":0.3,"tier":1,"value":2},
+  {"id":"herbs_medicinal","category":"FoodRaw","stack_limit":60,"base_hp":15,"mass":0.1,"tier":2,"value":8},
+  {"id":"spices_rare","category":"FoodRaw","stack_limit":40,"base_hp":10,"mass":0.1,"tier":3,"value":15},
+  
+  // Processed Food
+  {"id":"flour_sack","category":"Processed","stack_limit":75,"base_hp":40,"mass":0.7,"tier":2,"value":6},
+  {"id":"bread_simple","category":"Food","stack_limit":50,"base_hp":45,"mass":0.3,"tier":2,"value":8},
+  {"id":"bread_fine","category":"Food","stack_limit":40,"base_hp":55,"mass":0.3,"tier":3,"value":15},
+  {"id":"food_ration","category":"Food","stack_limit":100,"base_hp":40,"mass":0.5,"tier":2,"value":10},
+  {"id":"meal_simple","category":"Food","stack_limit":60,"base_hp":50,"mass":0.4,"tier":2,"value":12},
+  {"id":"meal_fine","category":"Food","stack_limit":40,"base_hp":70,"mass":0.4,"tier":3,"value":25},
+  {"id":"meal_lavish","category":"Food","stack_limit":30,"base_hp":90,"mass":0.5,"tier":4,"value":50},
+  {"id":"preserved_meat","category":"Food","stack_limit":80,"base_hp":60,"mass":0.7,"tier":2,"value":15},
+  {"id":"smoked_fish","category":"Food","stack_limit":70,"base_hp":55,"mass":0.5,"tier":2,"value":18},
+  
+  // Tools - Expanded Tiers
+  {"id":"stone_axe","category":"Tool","stack_limit":1,"base_hp":80,"mass":2.2,"tier":1,"value":15},
+  {"id":"copper_axe","category":"Tool","stack_limit":1,"base_hp":110,"mass":2.3,"tier":2,"value":35},
+  {"id":"iron_axe","category":"Tool","stack_limit":1,"base_hp":140,"mass":2.5,"tier":3,"value":60},
+  {"id":"steel_axe","category":"Tool","stack_limit":1,"base_hp":180,"mass":2.4,"tier":4,"value":120},
+  {"id":"mythril_axe","category":"Tool","stack_limit":1,"base_hp":250,"mass":2.2,"tier":5,"value":400},
+  
+  {"id":"stone_pick","category":"Tool","stack_limit":1,"base_hp":70,"mass":2.5,"tier":1,"value":15},
+  {"id":"copper_pick","category":"Tool","stack_limit":1,"base_hp":100,"mass":2.6,"tier":2,"value":35},
+  {"id":"iron_pick","category":"Tool","stack_limit":1,"base_hp":140,"mass":2.7,"tier":3,"value":60},
+  {"id":"steel_pick","category":"Tool","stack_limit":1,"base_hp":180,"mass":2.6,"tier":4,"value":120},
+  {"id":"orichalcum_pick","category":"Tool","stack_limit":1,"base_hp":220,"mass":2.5,"tier":5,"value":350},
+  
+  {"id":"wood_hoe","category":"Tool","stack_limit":1,"base_hp":60,"mass":1.8,"tier":1,"value":12},
+  {"id":"iron_hoe","category":"Tool","stack_limit":1,"base_hp":120,"mass":2.0,"tier":3,"value":45},
+  {"id":"steel_hoe","category":"Tool","stack_limit":1,"base_hp":160,"mass":1.9,"tier":4,"value":90},
+  
+  {"id":"wood_sickle","category":"Tool","stack_limit":1,"base_hp":70,"mass":1.5,"tier":1,"value":10},
+  {"id":"iron_sickle","category":"Tool","stack_limit":1,"base_hp":110,"mass":1.9,"tier":3,"value":40},
+  {"id":"steel_sickle","category":"Tool","stack_limit":1,"base_hp":150,"mass":1.8,"tier":4,"value":80},
+  
+  {"id":"hammer_stone","category":"Tool","stack_limit":1,"base_hp":90,"mass":2.0,"tier":1,"value":18},
+  {"id":"hammer_iron","category":"Tool","stack_limit":1,"base_hp":120,"mass":1.6,"tier":3,"value":50},
+  {"id":"hammer_steel","category":"Tool","stack_limit":1,"base_hp":160,"mass":1.5,"tier":4,"value":100},
+  {"id":"hammer_master","category":"Tool","stack_limit":1,"base_hp":200,"mass":1.4,"tier":5,"value":250},
+  
+  {"id":"saw_iron","category":"Tool","stack_limit":1,"base_hp":120,"mass":1.9,"tier":3,"value":55},
+  {"id":"saw_steel","category":"Tool","stack_limit":1,"base_hp":160,"mass":1.8,"tier":4,"value":110},
+  
+  // Weapons - Expanded Arsenal  
+  {"id":"club_wood","category":"Weapon","stack_limit":1,"base_hp":60,"mass":2.0,"tier":1,"value":8},
+  {"id":"spear_wood","category":"Weapon","stack_limit":1,"base_hp":90,"mass":2.8,"tier":1,"value":20},
+  {"id":"spear_iron","category":"Weapon","stack_limit":1,"base_hp":140,"mass":3.2,"tier":3,"value":70},
+  {"id":"spear_steel","category":"Weapon","stack_limit":1,"base_hp":180,"mass":3.1,"tier":4,"value":140},
+  {"id":"spear_mythril","category":"Weapon","stack_limit":1,"base_hp":250,"mass":2.8,"tier":5,"value":500},
+  
+  {"id":"sword_short","category":"Weapon","stack_limit":1,"base_hp":150,"mass":3.0,"tier":3,"value":80},
+  {"id":"sword_long","category":"Weapon","stack_limit":1,"base_hp":180,"mass":3.5,"tier":4,"value":160},
+  {"id":"sword_master","category":"Weapon","stack_limit":1,"base_hp":220,"mass":3.2,"tier":5,"value":400},
+  
+  {"id":"axe_battle","category":"Weapon","stack_limit":1,"base_hp":150,"mass":3.4,"tier":3,"value":85},
+  {"id":"axe_war","category":"Weapon","stack_limit":1,"base_hp":190,"mass":3.8,"tier":4,"value":170},
+  {"id":"axe_legendary","category":"Weapon","stack_limit":1,"base_hp":240,"mass":3.5,"tier":5,"value":450},
+  
+  {"id":"bow_simple","category":"Weapon","stack_limit":1,"base_hp":80,"mass":2.5,"tier":1,"value":25},
+  {"id":"bow_composite","category":"Weapon","stack_limit":1,"base_hp":120,"mass":2.8,"tier":3,"value":80},
+  {"id":"bow_masterwork","category":"Weapon","stack_limit":1,"base_hp":160,"mass":2.6,"tier":4,"value":200},
+  
+  {"id":"crossbow_light","category":"Weapon","stack_limit":1,"base_hp":140,"mass":4.0,"tier":3,"value":120},
+  {"id":"crossbow_heavy","category":"Weapon","stack_limit":1,"base_hp":180,"mass":5.2,"tier":4,"value":250},
+  
+  {"id":"mace_iron","category":"Weapon","stack_limit":1,"base_hp":160,"mass":4.0,"tier":3,"value":90},
+  {"id":"mace_steel","category":"Weapon","stack_limit":1,"base_hp":200,"mass":3.8,"tier":4,"value":180},
+  
+  // Apparel - Complete Clothing System
+  // Head
+  {"id":"hat_cloth","category":"Apparel","stack_limit":1,"base_hp":40,"mass":0.2,"tier":1,"value":8},
+  {"id":"hat_fur","category":"Apparel","stack_limit":1,"base_hp":70,"mass":0.5,"tier":2,"value":25},
+  {"id":"hood_leather","category":"Apparel","stack_limit":1,"base_hp":60,"mass":0.4,"tier":2,"value":20},
+  {"id":"helmet_iron","category":"Apparel","stack_limit":1,"base_hp":120,"mass":2.5,"tier":3,"value":80},
+  {"id":"helmet_steel","category":"Apparel","stack_limit":1,"base_hp":160,"mass":2.3,"tier":4,"value":160},
+  {"id":"crown_gold","category":"Apparel","stack_limit":1,"base_hp":100,"mass":1.5,"tier":4,"value":800},
+  
+  // Torso
+  {"id":"shirt_cloth","category":"Apparel","stack_limit":1,"base_hp":60,"mass":0.5,"tier":1,"value":12},
+  {"id":"tunic_fine","category":"Apparel","stack_limit":1,"base_hp":80,"mass":0.6,"tier":2,"value":30},
+  {"id":"coat_leather","category":"Apparel","stack_limit":1,"base_hp":130,"mass":2.0,"tier":2,"value":60},
+  {"id":"parka_fur","category":"Apparel","stack_limit":1,"base_hp":140,"mass":2.2,"tier":3,"value":90},
+  {"id":"robe_silk","category":"Apparel","stack_limit":1,"base_hp":100,"mass":0.8,"tier":3,"value":150},
+  {"id":"armor_leather","category":"Apparel","stack_limit":1,"base_hp":180,"mass":3.0,"tier":3,"value":120},
+  {"id":"armor_chain","category":"Apparel","stack_limit":1,"base_hp":220,"mass":8.0,"tier":4,"value":300},
+  {"id":"armor_plate","category":"Apparel","stack_limit":1,"base_hp":280,"mass":12.0,"tier":5,"value":600},
+  
+  // Legs
+  {"id":"pants_cloth","category":"Apparel","stack_limit":1,"base_hp":50,"mass":0.4,"tier":1,"value":10},
+  {"id":"pants_leather","category":"Apparel","stack_limit":1,"base_hp":90,"mass":1.2,"tier":2,"value":35},
+  {"id":"pants_fur","category":"Apparel","stack_limit":1,"base_hp":110,"mass":1.5,"tier":3,"value":60},
+  {"id":"leggings_chain","category":"Apparel","stack_limit":1,"base_hp":150,"mass":4.0,"tier":4,"value":180},
+  {"id":"leggings_plate","category":"Apparel","stack_limit":1,"base_hp":200,"mass":6.0,"tier":5,"value":350},
+  
+  // Feet
+  {"id":"shoes_cloth","category":"Apparel","stack_limit":1,"base_hp":40,"mass":0.6,"tier":1,"value":8},
+  {"id":"boots_leather","category":"Apparel","stack_limit":1,"base_hp":70,"mass":1.2,"tier":2,"value":25},
+  {"id":"boots_fur","category":"Apparel","stack_limit":1,"base_hp":80,"mass":1.0,"tier":3,"value":45},
+  {"id":"boots_steel","category":"Apparel","stack_limit":1,"base_hp":120,"mass":2.5,"tier":4,"value":100},
+  
+  // Hands
+  {"id":"gloves_cloth","category":"Apparel","stack_limit":1,"base_hp":30,"mass":0.2,"tier":1,"value":6},
+  {"id":"gloves_leather","category":"Apparel","stack_limit":1,"base_hp":50,"mass":0.4,"tier":2,"value":18},
+  {"id":"gloves_wool","category":"Apparel","stack_limit":1,"base_hp":60,"mass":0.6,"tier":2,"value":20},
+  {"id":"gauntlets_iron","category":"Apparel","stack_limit":1,"base_hp":90,"mass":1.5,"tier":3,"value":60},
+  {"id":"gauntlets_steel","category":"Apparel","stack_limit":1,"base_hp":120,"mass":1.3,"tier":4,"value":120},
+  
+  // Accessories & Special Items
+  {"id":"ring_gold","category":"Jewelry","stack_limit":1,"base_hp":50,"mass":0.1,"tier":3,"value":200},
+  {"id":"ring_silver","category":"Jewelry","stack_limit":1,"base_hp":45,"mass":0.1,"tier":3,"value":150},
+  {"id":"amulet_protection","category":"Jewelry","stack_limit":1,"base_hp":60,"mass":0.2,"tier":4,"value":400},
+  {"id":"cloak_fine","category":"Apparel","stack_limit":1,"base_hp":80,"mass":1.0,"tier":3,"value":80},
+  {"id":"cloak_masterwork","category":"Apparel","stack_limit":1,"base_hp":120,"mass":0.8,"tier":4,"value":200},
+  
+  // Components and Parts
+  {"id":"component_mechanical","category":"Component","stack_limit":30,"base_hp":50,"mass":0.5,"tier":3,"value":35},
+  {"id":"component_electronic","category":"Component","stack_limit":25,"base_hp":40,"mass":0.3,"tier":4,"value":80},
+  {"id":"component_advanced","category":"Component","stack_limit":20,"base_hp":60,"mass":0.4,"tier":5,"value":200},
+  {"id":"gear_iron","category":"Component","stack_limit":40,"base_hp":60,"mass":0.8,"tier":3,"value":25},
+  {"id":"gear_steel","category":"Component","stack_limit":35,"base_hp":80,"mass":0.7,"tier":4,"value":50},
+  {"id":"spring_steel","category":"Component","stack_limit":50,"base_hp":40,"mass":0.2,"tier":4,"value":30},
+  {"id":"wire_copper","category":"Component","stack_limit":100,"base_hp":20,"mass":0.1,"tier":2,"value":8},
+  {"id":"wire_gold","category":"Component","stack_limit":75,"base_hp":25,"mass":0.1,"tier":3,"value":25},
+  
+  // Medicine and Drugs
+  {"id":"medicine_herbal","category":"Medicine","stack_limit":50,"base_hp":20,"mass":0.1,"tier":2,"value":15},
+  {"id":"medicine_industrial","category":"Medicine","stack_limit":40,"base_hp":30,"mass":0.1,"tier":3,"value":40},
+  {"id":"medicine_glitterworld","category":"Medicine","stack_limit":30,"base_hp":40,"mass":0.1,"tier":5,"value":150},
+  {"id":"drug_alcohol","category":"Drug","stack_limit":60,"base_hp":25,"mass":0.3,"tier":1,"value":8},
+  {"id":"drug_stimulant","category":"Drug","stack_limit":40,"base_hp":15,"mass":0.1,"tier":3,"value":60},
+  {"id":"drug_painkiller","category":"Drug","stack_limit":50,"base_hp":18,"mass":0.1,"tier":2,"value":25},
+  
+  // Art and Luxury Items
+  {"id":"sculpture_stone","category":"Art","stack_limit":1,"base_hp":200,"mass":20.0,"tier":2,"value":100},
+  {"id":"sculpture_metal","category":"Art","stack_limit":1,"base_hp":250,"mass":25.0,"tier":3,"value":300},
+  {"id":"sculpture_gold","category":"Art","stack_limit":1,"base_hp":180,"mass":15.0,"tier":4,"value":800},
+  {"id":"painting_crude","category":"Art","stack_limit":1,"base_hp":80,"mass":2.0,"tier":1,"value":50},
+  {"id":"painting_fine","category":"Art","stack_limit":1,"base_hp":100,"mass":2.5,"tier":3,"value":200},
+  {"id":"painting_masterpiece","category":"Art","stack_limit":1,"base_hp":120,"mass":3.0,"tier":5,"value":1000},
+  {"id":"instrument_flute","category":"Art","stack_limit":1,"base_hp":60,"mass":0.5,"tier":2,"value":80},
+  {"id":"instrument_lute","category":"Art","stack_limit":1,"base_hp":80,"mass":2.0,"tier":3,"value":150},
+  {"id":"instrument_piano","category":"Art","stack_limit":1,"base_hp":300,"mass":200.0,"tier":4,"value":2000}
 ]
