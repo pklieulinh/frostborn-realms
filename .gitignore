@@ -11,6 +11,20 @@ UserSettings/
 Logs/
 *.log
 
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+.env
+instance/
+.coverage
+.pytest_cache/
+
 # IDE
 .vscode/
 .idea/
