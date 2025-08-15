@@ -1,0 +1,69 @@
+[
+  {"id":"farm_plot","category":"Food","tier":1,"cost":[{"item":"wood_log","amount":10}],"work":90,"hp":120,"tags":["food_base"],"chain":["kitchen_basic"]},
+  {"id":"greenhouse_basic","category":"Food","tier":2,"cost":[{"item":"wood_log","amount":25},{"item":"stone_block","amount":15}],"work":240,"hp":260,"tags":["food_mid"]},
+  {"id":"hydroponic_bay","category":"Food","tier":3,"cost":[{"item":"steel_ingot","amount":15},{"item":"crystal_frost","amount":4}],"work":420,"hp":300,"tags":["food_high"]},
+  {"id":"smokehouse","category":"Food","tier":2,"cost":[{"item":"wood_log","amount":30},{"item":"stone_block","amount":12}],"work":200,"hp":220,"tags":["food_process"]},
+  {"id":"kitchen_basic","category":"Food","tier":2,"cost":[{"item":"stone_block","amount":20},{"item":"wood_log","amount":25}],"work":260,"hp":250,"tags":["food_cook"]},
+
+  {"id":"hut","category":"Housing","tier":1,"cost":[{"item":"wood_log","amount":30}],"work":150,"hp":180,"tags":["housing_basic"]},
+  {"id":"cabin","category":"Housing","tier":2,"cost":[{"item":"wood_log","amount":45},{"item":"stone_block","amount":15}],"work":260,"hp":260,"tags":["housing_mid"]},
+  {"id":"lodge","category":"Housing","tier":3,"cost":[{"item":"wood_log","amount":60},{"item":"stone_block","amount":35}],"work":360,"hp":320,"tags":["housing_large"]},
+  {"id":"dormitory","category":"Housing","tier":3,"cost":[{"item":"wood_log","amount":80},{"item":"stone_block","amount":40}],"work":420,"hp":420,"tags":["housing_mass"]},
+  {"id":"insulated_house","category":"Housing","tier":4,"cost":[{"item":"wood_log","amount":70},{"item":"stone_block","amount":50},{"item":"fur_warm","amount":20}],"work":520,"hp":480,"tags":["housing_cold"]},
+
+  {"id":"tailor_workshop","category":"Equipment","tier":2,"cost":[{"item":"wood_log","amount":35},{"item":"stone_block","amount":15}],"work":260,"hp":240,"tags":["equip_cold"]},
+  {"id":"tannery","category":"Equipment","tier":2,"cost":[{"item":"wood_log","amount":30},{"item":"stone_block","amount":10}],"work":220,"hp":200,"tags":["equip_leather"]},
+  {"id":"loom","category":"Equipment","tier":2,"cost":[{"item":"wood_log","amount":25},{"item":"stone_block","amount":10}],"work":200,"hp":190,"tags":["equip_textile"]},
+  {"id":"forge_smithy","category":"Equipment","tier":3,"cost":[{"item":"stone_block","amount":40},{"item":"iron_ingot","amount":20}],"work":380,"hp":360,"tags":["equip_weapon"]},
+  {"id":"armory_rack","category":"Equipment","tier":3,"cost":[{"item":"wood_log","amount":20},{"item":"iron_ingot","amount":15}],"work":240,"hp":220,"tags":["equip_store"]},
+
+  {"id":"hearth_hall","category":"Recreation","tier":1,"cost":[{"item":"wood_log","amount":40},{"item":"stone_block","amount":10}],"work":200,"hp":200,"tags":["rec_social"]},
+  {"id":"music_stand","category":"Recreation","tier":1,"cost":[{"item":"wood_log","amount":15}],"work":90,"hp":80,"tags":["rec_art"]},
+  {"id":"library_corner","category":"Recreation","tier":2,"cost":[{"item":"wood_log","amount":25},{"item":"stone_block","amount":15}],"work":180,"hp":160,"tags":["rec_int"]},
+  {"id":"shrine_small","category":"Recreation","tier":2,"cost":[{"item":"stone_block","amount":30},{"item":"crystal_frost","amount":2}],"work":260,"hp":200,"tags":["rec_spirit"]},
+  {"id":"bathhouse","category":"Recreation","tier":3,"cost":[{"item":"stone_block","amount":50},{"item":"wood_log","amount":30},{"item":"iron_ingot","amount":10}],"work":400,"hp":340,"tags":["rec_lux"]},
+
+  {"id":"watchtower_wood","category":"Defense","tier":1,"cost":[{"item":"wood_log","amount":35}],"work":200,"hp":220,"tags":["def_basic"]},
+  {"id":"palisade_segment","category":"Defense","tier":1,"cost":[{"item":"wood_log","amount":15}],"work":80,"hp":160,"tags":["def_wall"]},
+  {"id":"stone_wall","category":"Defense","tier":2,"cost":[{"item":"stone_block","amount":20}],"work":120,"hp":300,"tags":["def_wall"]},
+  {"id":"gate_wood","category":"Defense","tier":1,"cost":[{"item":"wood_log","amount":25}],"work":140,"hp":200,"tags":["def_gate"]},
+  {"id":"gate_stone","category":"Defense","tier":2,"cost":[{"item":"stone_block","amount":30}],"work":200,"hp":380,"tags":["def_gate"]},
+  {"id":"ballista_turret","category":"Defense","tier":3,"cost":[{"item":"wood_log","amount":40},{"item":"iron_ingot","amount":15}],"work":420,"hp":300,"tags":["def_ranged"]},
+  {"id":"bastion_tower","category":"Defense","tier":4,"cost":[{"item":"stone_block","amount":80},{"item":"iron_ingot","amount":30},{"item":"steel_ingot","amount":15}],"work":650,"hp":600,"tags":["def_heavy"]},
+
+  {"id":"storage_crate","category":"Storage","tier":1,"cost":[{"item":"wood_log","amount":25}],"work":120,"hp":140,"tags":["store_general"]},
+  {"id":"granary","category":"Storage","tier":2,"cost":[{"item":"stone_block","amount":30},{"item":"wood_log","amount":20}],"work":240,"hp":260,"tags":["store_food"]},
+  {"id":"cold_storage","category":"Storage","tier":3,"cost":[{"item":"stone_block","amount":40},{"item":"crystal_frost","amount":4}],"work":360,"hp":300,"tags":["store_food_cold"]},
+  {"id":"stockyard","category":"Storage","tier":1,"cost":[{"item":"wood_log","amount":20}],"work":90,"hp":120,"tags":["store_bulk"]},
+  {"id":"armory_store","category":"Storage","tier":3,"cost":[{"item":"wood_log","amount":30},{"item":"iron_ingot","amount":20}],"work":320,"hp":260,"tags":["store_equipment"]},
+
+  {"id":"portal_gate_t1","category":"Portal","tier":2,"cost":[{"item":"stone_block","amount":50},{"item":"crystal_frost","amount":6}],"work":520,"hp":400,"tags":["portal"]},
+  {"id":"portal_gate_t2","category":"Portal","tier":3,"cost":[{"item":"stone_block","amount":70},{"item":"crystal_frost","amount":10},{"item":"orichalcum_shard","amount":4}],"work":760,"hp":520,"tags":["portal"]},
+  {"id":"portal_gate_t3","category":"Portal","tier":4,"cost":[{"item":"stone_block","amount":90},{"item":"crystal_frost","amount":16},{"item":"orichalcum_shard","amount":8}],"work":980,"hp":640,"tags":["portal"]},
+  {"id":"portal_gate_t4","category":"Portal","tier":5,"cost":[{"item":"stone_block","amount":130},{"item":"crystal_frost","amount":25},{"item":"orichalcum_shard","amount":14}],"work":1400,"hp":820,"tags":["portal"]},
+
+  {"id":"research_table","category":"Research","tier":1,"cost":[{"item":"wood_log","amount":35},{"item":"stone_block","amount":10}],"work":210,"hp":180,"tags":["research_basic"]},
+  {"id":"arcane_lab","category":"Research","tier":3,"cost":[{"item":"stone_block","amount":40},{"item":"crystal_frost","amount":8}],"work":400,"hp":260,"tags":["research_arcane"]},
+  {"id":"library_scriptorium","category":"Research","tier":4,"cost":[{"item":"stone_block","amount":65},{"item":"wood_log","amount":40},{"item":"crystal_frost","amount":10}],"work":580,"hp":380,"tags":["research_high"]},
+
+  {"id":"foundry_basic","category":"Production","tier":2,"cost":[{"item":"stone_block","amount":40},{"item":"wood_log","amount":25}],"work":300,"hp":300,"tags":["prod_smelter"]},
+  {"id":"smithy_advanced","category":"Production","tier":3,"cost":[{"item":"stone_block","amount":50},{"item":"iron_ingot","amount":20}],"work":420,"hp":360,"tags":["prod_forge"]},
+  {"id":"workbench_crafting","category":"Production","tier":1,"cost":[{"item":"wood_log","amount":25},{"item":"stone_block","amount":10}],"work":160,"hp":160,"tags":["prod_basic"]},
+  {"id":"kiln","category":"Production","tier":2,"cost":[{"item":"stone_block","amount":35},{"item":"wood_log","amount":20}],"work":260,"hp":250,"tags":["prod_fire"]},
+  {"id":"brewery_small","category":"Production","tier":3,"cost":[{"item":"wood_log","amount":40},{"item":"stone_block","amount":35}],"work":340,"hp":300,"tags":["prod_beverage"]},
+
+  {"id":"hearth_fire","category":"Heat","tier":1,"cost":[{"item":"wood_log","amount":20}],"work":100,"hp":120,"tags":["heat_basic"]},
+  {"id":"furnace_stone","category":"Heat","tier":2,"cost":[{"item":"stone_block","amount":40},{"item":"wood_log","amount":15}],"work":240,"hp":300,"tags":["heat_mid"]},
+  {"id":"boiler_heater","category":"Heat","tier":3,"cost":[{"item":"stone_block","amount":55},{"item":"iron_ingot","amount":20}],"work":380,"hp":340,"tags":["heat_high"]},
+
+  {"id":"trade_post","category":"Expansion","tier":3,"cost":[{"item":"stone_block","amount":50},{"item":"wood_log","amount":40},{"item":"iron_ingot","amount":15}],"work":500,"hp":420,"tags":["expand_trade"]},
+  {"id":"territory_beacon","category":"Expansion","tier":4,"cost":[{"item":"stone_block","amount":80},{"item":"crystal_frost","amount":12}],"work":620,"hp":500,"tags":["expand_signal"]},
+  {"id":"banner_great","category":"Expansion","tier":2,"cost":[{"item":"wood_log","amount":20},{"item":"cloth_roll","amount":10}],"work":160,"hp":140,"tags":["expand_morale"]},
+
+  {"id":"training_dummy","category":"Training","tier":1,"cost":[{"item":"wood_log","amount":25},{"item":"hide_tanned","amount":5}],"work":140,"hp":180,"tags":["train_combat"]},
+  {"id":"archery_range","category":"Training","tier":2,"cost":[{"item":"wood_log","amount":40},{"item":"stone_block","amount":15}],"work":300,"hp":260,"tags":["train_ranged"]},
+
+  {"id":"loom_house","category":"Production","tier":2,"cost":[{"item":"wood_log","amount":35},{"item":"stone_block","amount":15},{"item":"fiber_plant","amount":30}],"work":300,"hp":260,"tags":["prod_textile"]},
+  {"id":"tannery_rack","category":"Production","tier":2,"cost":[{"item":"wood_log","amount":30},{"item":"stone_block","amount":15},{"item":"hide_raw","amount":20}],"work":260,"hp":240,"tags":["prod_leather"]},
+  {"id":"smelter_advanced","category":"Production","tier":4,"cost":[{"item":"stone_block","amount":60},{"item":"steel_ingot","amount":25},{"item":"crystal_frost","amount":5}],"work":600,"hp":480,"tags":["prod_smelter_high"]}
+]
