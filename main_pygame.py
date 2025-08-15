@@ -4,6 +4,11 @@ _THIS_FILE=Path(__file__).resolve()
 for root in [_THIS_FILE.parent,_THIS_FILE.parent.parent,_THIS_FILE.parent.parent.parent]:
     if (root/"core").is_dir() and str(root) not in sys.path:
         sys.path.insert(0,str(root))
+        
+# Fix asset loader import path
+if (_THIS_FILE.parent / "frostborn-realms").is_dir():
+    sys.path.insert(0, str(_THIS_FILE.parent / "frostborn-realms"))
+    
 from assets.loader.asset_loader import AssetLoader
 from core.ecs.world import World
 from core.config import WORLD_SEED, TICK_INTERVAL_SEC
